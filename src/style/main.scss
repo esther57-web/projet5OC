@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+$black-color : #000000;
+$red-color : #FF6060;
+$very-light-grey-color : #F6F6F6;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat;
+    
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+li {
+    text-decoration: none;
+}
