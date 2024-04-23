@@ -2,6 +2,7 @@
 $black-color : #000000;
 $red-color : #FF6060;
 $very-light-grey-color : #F6F6F6;
+$white : #FFFFFF ;
 
 * {
     box-sizing: border-box;
@@ -11,7 +12,7 @@ $very-light-grey-color : #F6F6F6;
 
 body {
     font-family: Montserrat;
-    
+
 }
 
 a {
@@ -21,4 +22,8 @@ a {
 
 li {
     text-decoration: none;
+}
+
+main {
+    margin: 2rem 3rem;
 }

@@ -1,6 +1,6 @@
 
 
-function Annonces() {
+function Announces() {
     return (
        
           
@@ -10,4 +10,4 @@ function Annonces() {
       )
 }
 
-export default Annonces
+export default Announces
