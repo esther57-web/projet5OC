@@ -1,0 +1,50 @@
+@import '../../style/main.scss';
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 6rem;
+
+    ul {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        li {
+            width: 100%;
+            background-color: $red-color;
+            text-decoration: none;
+            color: $white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px 10px 15px;
+            height: 54px;
+            border-radius: 10px;
+
+            h2 {
+                align-self: center;
+            }
+
+            img {
+                cursor: pointer;
+            }
+
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        p {
+            display: none;
+            background-color: $very-light-grey-color;
+            border-radius: 0 0 5px 5px;
+            padding: 1.2rem 1rem;
+            line-height: 1.6rem;
+        }
+    }
+}
