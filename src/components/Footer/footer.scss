@@ -1,0 +1,21 @@
+@import '../../style/main.scss';
+
+footer {
+    background-color: black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    line-height: 6rem;
+
+    div {
+        display: flex;
+        align-items: end;
+        gap: 5px;
+    }
+
+    p {
+        color: $white;
+    }
+}

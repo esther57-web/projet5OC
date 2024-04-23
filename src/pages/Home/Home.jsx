@@ -1,13 +1,12 @@
-import HomeBanner from "../../components/HomeBanner/HomeBanner"
+import HomeBanner from "../../components/HomeBanner/HomeBanner";
+import Gallery from "../../components/Gallery/Gallery";
 
 function Home() {
-  return (
-    
+  return ( 
    <main>
     <HomeBanner />
+    <Gallery />
    </main>   
-    
-    
   )
 }
 
