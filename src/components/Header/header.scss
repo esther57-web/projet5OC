@@ -18,6 +18,14 @@ header {
         a:hover {
             text-decoration: underline;
         }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .no-underline {
+            text-decoration: none;
+        }
     }
 }
 

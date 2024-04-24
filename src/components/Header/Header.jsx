@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import '../Header/header.scss';
+import { useState } from 'react';
 
 function Header() {
+    const [navigation, setNavigation] = useState("Home");
+
+    
     return (
     <header>
         <div className='logo'>
@@ -11,8 +15,8 @@ function Header() {
             <img src='./src/assets/desktop/icons/A.svg' alt='logo-A-element'></img>
         </div>
         <nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/apropos">A propos</Link>
+            <Link to="/" className={navigation === "Home" ? "underlined" : "no-underline"} onClick={() => setNavigation("Home")}>Accueil</Link>
+            <Link to="/apropos" className={navigation === "About" ? "underlined" : "no-underline"} onClick={() => setNavigation("About")}>A propos</Link>
         </nav>
     </header>
     )
