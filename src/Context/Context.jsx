@@ -1,4 +1,4 @@
-import data from '../data/logements.json';
+import data from '../data/logements';
 import { createContext } from 'react';
 
 export const AnnounceContext = createContext(null)

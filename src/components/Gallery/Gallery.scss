@@ -12,22 +12,5 @@
     gap: 2rem;
     padding: 2rem;
 
-    a {
-        height: 340px;
-
-        article {
-            background-size: cover;
-            border-radius: 10px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: end;
-            padding: 1rem;
-
-            h2 {
-                color: $white;
-                font-size: 18px;
-            }
-        }
-    }
+    
 }

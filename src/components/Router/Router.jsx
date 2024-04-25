@@ -6,6 +6,7 @@ import About from '../../pages/About/About'
 import Error from '../../pages/Error/Error'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import data from '../../data/logements'
 
 function RouterElem() {
     return (
@@ -14,7 +15,9 @@ function RouterElem() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/annonces/:id" element={<Announces />} />
+                    <Route path="/annonces" element={<Announces data={data} key={data.id} />}> 
+                        <Route path=':announceId' element={<Announces />}></Route>
+                    </Route>
                     <Route path="/apropos" element={<About />} />
                     <Route path="*" element={<Error />} />
                 </Routes>

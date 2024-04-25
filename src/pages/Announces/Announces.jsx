@@ -1,17 +1,18 @@
 import { useContext } from "react";
 import { AnnounceContext } from "../../Context/Context";
 import { useParams } from "react-router-dom";
+import AnnounceDisplay from "../../components/AnnounceDisplay/AnnounceDisplay";
 
 function Announces() {
     const {data} = useContext(AnnounceContext)
     const {announceId} = useParams()
-    const announce = data.find((e)=> e.id === Number(announceId))
+    const announce = data.find((e)=> e.id === announceId)
+    
+    
     return (
-       
-          
-         <h1>Annonces</h1>
-      
-        
+       <main className=".announce-section">
+            <AnnounceDisplay announce={announce}/>
+       </main>   
       )
 }
 

@@ -1,15 +1,11 @@
 import './Gallery.scss';
-import data from '../../data/logements.json'
-import { Link } from 'react-router-dom';
+import data from '../../data/logements';
+import AnnouncePreview from '../AnnouncePreview/AnnouncePreview';
 
 function Gallery() {
     
-    const announceList = data.map((announce) =>
-        <Link to={`/annonces/${announce.id}`} key={announce.id}>
-            <article style={{ backgroundImage: `url(${announce.cover})` }}>
-                <h2>{announce.title}</h2>
-            </article>
-        </Link>
+    const announceList = data.map((announce, i) =>
+        <AnnouncePreview key={i} id={announce.id} cover={announce.cover} title={announce.title}/>
     );
     return (
         <section className="gallery">
