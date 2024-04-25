@@ -1,1 +1,53 @@
 @import '../../style/main.scss';
+
+.announce-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    .content-info, .host {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1, h2, h3 {
+        font-weight: 500;
+    }
+
+    h1 {
+        color: $red-color;
+        font-size: 36px;
+    }
+
+    h4, h5 {
+        font-weight: 700;
+    }
+
+    .host {
+        gap: 1rem;
+
+        .host-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            h2 {
+                color: $red-color;
+                text-align: end;
+            }
+    
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+
+}
+
+.up {
+    position: relative;
+    bottom: 6rem;
+}

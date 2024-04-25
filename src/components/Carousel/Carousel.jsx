@@ -2,7 +2,7 @@ import './Carousel.scss';
 import previous from '../../assets/icons/previous.svg';
 import next from '../../assets/icons/next.svg';
 import { useState } from 'react';
-//import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const Carousel = (props) => {
     const {announce} = props
@@ -45,5 +45,9 @@ const Carousel = (props) => {
     </div>
   )
 }
+
+Carousel.propTypes = {
+  announce: PropTypes.object.isRequired,
+};
 
 export default Carousel
