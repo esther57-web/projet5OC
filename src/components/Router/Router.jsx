@@ -6,17 +6,18 @@ import About from '../../pages/About/About'
 import Error from '../../pages/Error/Error'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
-import data from '../../data/logements'
+//import { useNavigate } from 'react-router-dom'
 
 function RouterElem() {
+    
     return (
         <React.StrictMode>
             <Router>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home />}/>
                     <Route path="/annonces" element={<Announces  />}> 
-                        <Route path=':announceId' element={<Announces />}></Route>
+                        <Route path=':announceId' element={<Announces />} />
                     </Route>
                     <Route path="/apropos" element={<About />} />
                     <Route path="*" element={<Error />} />

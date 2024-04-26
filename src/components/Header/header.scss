@@ -15,9 +15,15 @@ header {
         display: flex;
         align-items: center;
         gap: 57px;
-        a:hover {
-            text-decoration: underline;
+        
+        a {
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
+        
 
         .underlined {
             text-decoration: underline;

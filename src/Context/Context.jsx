@@ -1,5 +1,6 @@
 import data from '../data/logements';
 import { createContext } from 'react';
+import PropTypes from 'prop-types';
 
 export const AnnounceContext = createContext(null)
 
@@ -11,5 +12,9 @@ const AnnounceContextProvider = (props) => {
         </AnnounceContext.Provider>
     )
 }
+
+AnnounceContextProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
 
 export default AnnounceContextProvider
