@@ -15,7 +15,7 @@ function RouterElem() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/annonces" element={<Announces data={data} key={data.id} />}> 
+                    <Route path="/annonces" element={<Announces  />}> 
                         <Route path=':announceId' element={<Announces />}></Route>
                     </Route>
                     <Route path="/apropos" element={<About />} />
@@ -26,5 +26,5 @@ function RouterElem() {
         </React.StrictMode>
     )
 }
-
+//data={data} key={data.id}
 export default RouterElem
