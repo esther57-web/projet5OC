@@ -1,36 +1,50 @@
 import './collapse.scss';
-import aboutList from '../../data/collapse';
 import React from 'react';
+import arrowUp from '../../assets/icons/arrow-up.svg'
+import PropTypes from 'prop-types';
 
+function Collapse({title, content}) {
+    
+    const [isParagraphVisible, setParagraphVisible] = React.useState(false);
 
-function Collapse() {
-    const [isParagraphVisible, setParagraphVisible] = React.useState(Array(aboutList.length).fill(false));
-
-    const toggleParagraph = (index) => {
-        const updatedVisibility = [...isParagraphVisible];
-        updatedVisibility[index] = !updatedVisibility[index];
-        setParagraphVisible(updatedVisibility);
+    const toggleParagraph = () => {
+        setParagraphVisible(!isParagraphVisible);
     };
 
-    const aboutElement = aboutList.map((element, index) =>
-        <ul key={element.id}>
+    let arrayContent 
+
+    if (content.includes("#@")) {
+        content = content.split("#@");
+        arrayContent = content
+    } else {
+        arrayContent = []
+        arrayContent.push(content)
+    }
+
+    
+    console.log(arrayContent)
+    return (   
+        <ul className='collapse'>
             <li >
-                <h2>{element.title}</h2>
-                <img src='./src/assets/icons/arrow-up.svg' alt='dérouler/enrouler le menu' onClick={() => toggleParagraph(index)} ></img>
+                <h2>{title}</h2>
+                <img src={arrowUp} alt='dérouler/enrouler le menu' onClick={toggleParagraph} className={isParagraphVisible ? 'down' : ''}></img>
             </li>
-            <p className={isParagraphVisible[index] ? 'visible' : 'none'}>
-                {element.content}
-            </p>
+            <div className={`p-container ${isParagraphVisible ? 'visible' : 'none'}`}>
+                {arrayContent.map((item, index) => (
+                    <p key={index} >
+                        {item}
+                    </p>
+                ))}
+            </div>
         </ul>
-        
-    )
-    return (
-        <section className='collapse'>
             
-            {aboutElement}
-            
-        </section>
+       
     )
 }
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+  };
 
 export default Collapse
