@@ -1,6 +1,7 @@
 import AboutBanner from "../../components/AboutBanner/AboutBanner";
 import Collapse from "../../components/Collapse/Collapse";
 import aboutList from "../../data/collapse";
+import './about.scss'
 
 function About() {
     return (
