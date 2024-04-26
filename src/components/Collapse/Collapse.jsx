@@ -22,7 +22,6 @@ function Collapse({title, content}) {
     }
 
     
-    console.log(arrayContent)
     return (   
         <ul className='collapse'>
             <li >
