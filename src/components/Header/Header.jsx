@@ -21,7 +21,7 @@ function Header() {
     return (
     <header>
         <div className='logo'>
-            <img src='./src/assets/desktop/icons/K.svg' alt='logo-K-element'></img>
+            <img src='./src/assets/desktop/icons/K.svg' className='k-logo' alt='logo-K-element'></img>
             <img src='./src/assets/desktop/icons/logo-desktop.svg' alt='logo-element'></img>
             <img src='./src/assets/desktop/icons/S.svg' alt='logo-S-element'></img>
             <img src='./src/assets/desktop/icons/A.svg' alt='logo-A-element'></img>

@@ -19,3 +19,13 @@
         text-decoration: underline;
     }
 }
+
+@media (max-width:1024px) {
+
+    .error {
+        h1 {
+            font-size: 200px;
+        }
+    }
+   
+}

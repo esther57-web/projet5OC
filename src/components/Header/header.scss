@@ -36,4 +36,28 @@ header {
 }
 
 
+@media (max-width:724px) {
+    header {
+        margin: 1rem;
 
+        .logo {
+            img {
+                width: 25px;
+            }
+            
+            .k-logo {
+                width: 30px;
+            }
+        }
+        
+        nav {
+            gap: 20px;
+
+            a {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+    }
+    
+}

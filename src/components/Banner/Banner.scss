@@ -40,3 +40,19 @@
         }
     }
 }
+
+@media (max-width:724px) {
+    .home-banner {
+        height: 111px;
+        justify-content: start;
+        padding: 1rem 2.6rem 1rem 1rem;
+        border-radius: 10px;
+        &::before {
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    
+}

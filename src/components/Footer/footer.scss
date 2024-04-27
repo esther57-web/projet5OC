@@ -8,6 +8,7 @@ footer {
     align-items: center;
     justify-content: end;
     line-height: 6rem;
+    text-align: center;
 
     div {
         display: flex;
@@ -17,5 +18,17 @@ footer {
 
     p {
         color: $white;
+    }
+}
+
+@media (max-width:724px) {
+    footer {
+        line-height: 1rem;
+        justify-content: center;
+        padding: 0 35%;
+        gap: 1rem;
+        p {
+            font-size: 12px;
+        }
     }
 }

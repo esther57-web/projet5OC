@@ -5,3 +5,14 @@
     justify-content: flex-end;
     gap: 10px;
 }
+
+@media (max-width:724px) {
+    .rating {
+       gap: 5px; 
+       img {
+        width: 14px;
+        height: 14px;
+       }
+    }
+    
+}

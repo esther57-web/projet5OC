@@ -5,11 +5,22 @@
     flex-direction: row;
     gap: 10px;
     margin: 1.2rem 0;
+    flex-wrap: wrap;
     h4 {
         background-color: $red-color;
         border-radius: 10px;
         color: $white;
         width: fit-content;
         padding: 0.2rem 2rem;
+    }
+}
+
+@media (max-width:724px) {
+    .tags {
+        margin: 0.8rem 0;
+        h4 {
+            border-radius: 5px;
+            padding: 0.2rem 1rem;
+        }
     }
 }

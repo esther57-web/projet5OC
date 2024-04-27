@@ -2,4 +2,23 @@
 
 .about-collapse-section {
     padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .about-collapse-section {
+        padding: 0 2rem;
+    }
+    
+}
+
+@media (max-width:724px) {
+    .about-collapse-section {
+        padding: 0;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
 }

@@ -20,3 +20,15 @@
     }
     
 }
+
+@media (max-width:724px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        padding: 0;
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+    
+}

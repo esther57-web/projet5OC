@@ -35,3 +35,10 @@ main {
 .none {
     display: none !important;
 }
+
+@media (max-width:724px) {
+    main {
+        margin: 1rem 1rem;
+    }
+    
+}

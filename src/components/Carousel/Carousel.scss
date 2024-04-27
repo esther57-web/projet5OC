@@ -38,3 +38,28 @@
         justify-content: center;
     }
 }
+
+@media (max-width:724px) {
+    .carousel {
+        .carousel-img-section {
+            .carousel-img {
+              height: 225px; 
+              border-radius: 10px; 
+            }
+            
+        }
+
+        .slider-section {
+            bottom: 7.5rem;
+            padding: 0 1rem;
+
+            img {
+                width: 11px;
+            }
+        }
+
+        p {
+            bottom: 3rem;
+        }
+    }
+}
