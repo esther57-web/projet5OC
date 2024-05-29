@@ -6,7 +6,7 @@ import About from '../../pages/About/About'
 import Error from '../../pages/Error/Error'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
-//import { useNavigate } from 'react-router-dom'
+
 
 function RouterElem() {
     
@@ -27,5 +27,5 @@ function RouterElem() {
         </React.StrictMode>
     )
 }
-//data={data} key={data.id}
+
 export default RouterElem

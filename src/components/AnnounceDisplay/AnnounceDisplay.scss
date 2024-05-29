@@ -57,6 +57,10 @@
     gap: 76px;
 }
 
+.reduce {
+    height: calc(100% - 3rem);
+}
+
 @media (max-width:724px) {
     .announce-content {
         flex-direction: column;

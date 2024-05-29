@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 import Gallery from "../../components/Gallery/Gallery";
-import homeBg from "../../assets/images/accueil-bg-image.jpg"
+import homeBg from "../../assets/images/accueil-bg-image.jpg";
 
 function Home() {
   return ( 

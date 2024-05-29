@@ -10,7 +10,7 @@ const AnnounceDisplay = (props) => {
     const [firstName, lastName] = announce.host.name.split(' ');
     const equipmentsString = announce.equipments.join("#@")
   return (
-    <div>
+    <div className={announce.pictures.length === 1 ? '' : 'reduce'}>
       <Carousel announce={announce}/>
       <div className={`announce-content ${announce.pictures.length === 1 ? '' : 'up'}`}>
         <div className='content-info'>
