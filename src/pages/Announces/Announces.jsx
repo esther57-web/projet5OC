@@ -10,7 +10,7 @@ function Announces() {
     
     
     return (
-       <main className=".announce-section">
+       <main className="announce-section">
             <AnnounceDisplay announce={announce}/>
        </main>   
       )

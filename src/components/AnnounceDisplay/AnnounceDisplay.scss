@@ -1,51 +1,55 @@
 @import '../../style/main.scss';
 
-.announce-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
-
-    .content-info, .host {
+.announce-display {
+    height: 100%;
+    .announce-content {
         display: flex;
-        flex-direction: column;
-    }
-
-    h1, h2, h3 {
-        font-weight: 500;
-    }
-
-    h1 {
-        color: $red-color;
-        font-size: 36px;
-    }
-
-    h4, h5 {
-        font-weight: 700;
-    }
-
-    .host {
-        gap: 1rem;
-
-        .host-info {
+        justify-content: space-between;
+        margin: 2rem 0;
+    
+        .content-info, .host {
             display: flex;
-            align-items: center;
-            gap: 10px;
+            flex-direction: column;
+        }
     
-            h2 {
-                color: $red-color;
-                text-align: end;
-            }
+        h1, h2, h3 {
+            font-weight: 500;
+        }
     
-            img {
-                width: 64px;
-                height: 64px;
-                border-radius: 50%;
+        h1 {
+            color: $red-color;
+            font-size: 36px;
+        }
+    
+        h4, h5 {
+            font-weight: 700;
+        }
+    
+        .host {
+            gap: 1rem;
+    
+            .host-info {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+        
+                h2 {
+                    color: $red-color;
+                    text-align: end;
+                }
+        
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
             }
         }
-    }
+        
     
-
+    }
 }
+
 
 .up {
     position: relative;
@@ -62,40 +66,43 @@
 }
 
 @media (max-width:724px) {
-    .announce-content {
-        flex-direction: column;
-        margin: 1rem 0;
-        
-        
-        h1 {
-            font-size: 18px;
-        }
-
-        h2 {
-            font-size: 12px;
-        }
-
-        h3 {
-            font-size: 14px;
-        }
-
-        h4 {
-            font-size: 10px;
-        }
-        
-        .host {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
-            .host-info {
-                img {
-                    width: 32px;
-                    height: 32px;
+    .announce-display {
+        .announce-content {
+            flex-direction: column;
+            margin: 1rem 0;
+            
+            
+            h1 {
+                font-size: 18px;
+            }
+    
+            h2 {
+                font-size: 12px;
+            }
+    
+            h3 {
+                font-size: 14px;
+            }
+    
+            h4 {
+                font-size: 10px;
+            }
+            
+            .host {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .host-info {
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
                 }
             }
         }
     }
+    
 
     .announce-collapse {
         flex-direction: column;
