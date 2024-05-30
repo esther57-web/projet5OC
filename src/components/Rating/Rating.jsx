@@ -7,8 +7,6 @@ const Rating = (props) => {
   const {announce} = props
   const rate = parseInt(announce.rating)
   const noRate = 5 - rate
-
-
   
   return (
     <div className='rating'>
@@ -18,6 +16,7 @@ const Rating = (props) => {
       {Array(noRate).fill().map((_, index) => (
         <img key={index} src={greyStar} alt='étoile grise'/>
       ))}
+      
     </div>
   )
 }
