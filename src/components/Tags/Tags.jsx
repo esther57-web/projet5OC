@@ -1,4 +1,6 @@
 import './tags.scss';
+import PropTypes from 'prop-types';
+
 
 const Tags = (props) => {
     const {announce} = props
@@ -13,5 +15,9 @@ const Tags = (props) => {
     </div>
   )
 }
+
+Tags.propTypes = {
+  announce: PropTypes.object.isRequired,
+};
 
 export default Tags

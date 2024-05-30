@@ -1,5 +1,5 @@
 import './Gallery.scss';
-import data from '../../data/logements';
+import data from '../../data/logements.json'
 import AnnouncePreview from '../AnnouncePreview/AnnouncePreview';
 
 function Gallery() {

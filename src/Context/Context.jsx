@@ -1,4 +1,4 @@
-import data from '../data/logements';
+import data from '../data/logements.json';
 import { createContext } from 'react';
 import PropTypes from 'prop-types';
 

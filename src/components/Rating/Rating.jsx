@@ -16,7 +16,7 @@ const Rating = (props) => {
         <img key={index} src={redStar} alt='étoile rouge'/>
       ))}
       {Array(noRate).fill().map((_, index) => (
-        <img key={index} src={greyStar} alt='étoile rouge'/>
+        <img key={index} src={greyStar} alt='étoile grise'/>
       ))}
     </div>
   )
