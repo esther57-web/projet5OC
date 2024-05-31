@@ -15,9 +15,7 @@ const Carousel = (props) => {
         setCarouselNav(carouselNav - 1);
       } else if (carouselNav === 1) {
         setCarouselNav(carouselNav = carousel.length - 1)
-      }
-
-      
+      }  
     }
     
     const nextSlide = () => {
@@ -27,8 +25,6 @@ const Carousel = (props) => {
         setCarouselNav(1)
       }
     }
-
-    
 
   return (
     <div className='carousel'>

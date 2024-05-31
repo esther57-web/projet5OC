@@ -15,12 +15,14 @@
             display: flex;
             justify-content: space-between;
             padding: 10px 20px 10px 15px;
-            height: 54px;
+            height: 52px;
             border-radius: 10px;
+            z-index: 2;
 
             h2 {
                 align-self: center;
                 text-transform: capitalize;
+                font-size: 21px;
             }
 
             img {
@@ -36,10 +38,12 @@
 
         .p-container {
             background-color: $very-light-grey-color;
-            border-radius: 5px;
-            padding: 1.2rem 1rem;
+            border-radius: 0 0 5px 5px;
+            padding: 1.8rem 1rem;
             line-height: 1.6rem;
             width: 100%;
+            position: relative;
+            bottom: 1rem;
            
             
         }
