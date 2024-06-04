@@ -7,7 +7,6 @@ import Error from '../../pages/Error/Error'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 
-
 function RouterElem() {
     
     return (
@@ -16,9 +15,7 @@ function RouterElem() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />}/>
-                    <Route path="/annonces" element={<Announces  />}> 
-                        <Route path=':announceId' element={<Announces />} />
-                    </Route>
+                    <Route path='/annonces/:announceId' element={<Announces />} />
                     <Route path="/apropos" element={<About />} />
                     <Route path="*" element={<Error />} />
                 </Routes>
